@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   height: 100vh;
 }
@@ -47,11 +47,13 @@ body {
   margin: 10px 0;
   cursor: pointer;
   opacity: 0.6;
+  font-weight: bold;
 }
 
 .sidebar nav ul li.active {
   color: white;
   opacity: 1;
+  font-weight: bold;
 }
 
 .main-content {
@@ -222,4 +224,56 @@ body {
 
 .details a:hover {
   text-decoration: underline;
+}
+
+.skills-section {
+  margin: 20px 0;
+}
+
+.skills-section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #014040;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-right: 10px;
+}
+
+.skills-icons img{
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.skills-icons span {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 10px;
+  position: relative;
+}
+
+.skills-icons .beginner::after {
+  margin-top: 20px;
+  content: '(beginner)';
+  color: #F27405;
+  font-size: 14px;
+  position: absolute;
+  top: -25px;
+  right: 12px;
+  animation: fadeIn 1s infinite alternate;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
