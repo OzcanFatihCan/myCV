@@ -32,8 +32,8 @@ body {
 
 .sidebar .profile img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -44,7 +44,8 @@ body {
 }
 
 .sidebar nav ul li {
-  margin: 10px 0;
+  margin: 20px 0;
+  font-size: 19px;
   cursor: pointer;
   opacity: 0.6;
   font-weight: bold;
@@ -52,6 +53,7 @@ body {
 
 .sidebar nav ul li.active {
   color: white;
+  font-size: 19px;
   opacity: 1;
   font-weight: bold;
 }
@@ -68,6 +70,7 @@ body {
 
 .main-content .content {
   display: none;
+  margin-left: 30px;
 }
 
 .main-content .content.active {
@@ -137,6 +140,10 @@ body {
 .aboutCard h3 {
   color: #014040;
   font-size: 25px;
+}
+
+.aboutCard p{
+  font-size: 20px;
 }
 
 .aboutCard a {
@@ -308,6 +315,65 @@ body {
 .certificate-list li a{
     color:white;
     font-size: 25px;
+    text-decoration: none
+}
+
+#interests p {
+  width: 60%;
+  margin-left: 0 ;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.interestCard {
+  background-color: #03A678;
+  border-radius: 10px;
+  width: 70%;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.interestCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.interestCard h2 {
+  color: #fff;
+  font-size: 45px;
+}
+
+.interestCard h3 {
+  color: #014040;
+  font-size: 23px;
+}
+
+.interestCard a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.interestCard-content {
+  display: flex;
+}
+
+.interestCard-image {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interestCard-image img {
+  max-width: 65%;
+  max-height: 65%;
+  margin-right: 5px;
+  border-radius: 10px;
 }
 
 .simple-icons--dart {
